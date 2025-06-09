@@ -38,7 +38,6 @@ This project is a redesign of the **"Choose Your Skip Size"** page for REMWaste,
   - `SkipCard.jsx`: A reusable, stylized card component for each skip.
 
 ### 2. **Improved UX & Visual Hierarchy**
-- Replaced the original layout with a modern, **grid-based card layout**.
 - Added interactive hover effects and transition animations.
 - Highlighted selected cards with colored borders and check icons.
 - Made key data points (e.g., skip size, price, hire period) prominent and readable.
