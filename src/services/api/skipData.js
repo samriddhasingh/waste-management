@@ -1,8 +1,11 @@
 export const fetchSkipData = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+  const response = await fetch(
+    "https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft"
+  );
 
   if (!response.ok) {
-    throw new Error("Failed to fetch user data");
+    console.error("Failed to fetch skip data:");
+    return [];
   }
 
   return response.json();
