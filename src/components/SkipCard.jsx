@@ -18,7 +18,7 @@ const SkipCard = ({
         hover:shadow-xl overflow-hidden group
         ${
           selected
-            ? "border-blue-500 bg-gradient-to-br from-blue-50 to-blue-100 shadow-lg shadow-blue-200/50 -translate-y-1"
+            ? "border-primary bg-gradient-to-br from-blue-50 to-blue-100 shadow-lg shadow-blue-200/50 -translate-y-1"
             : "border-transparent hover:border-gray-200"
         }
       `}
@@ -31,11 +31,10 @@ const SkipCard = ({
       `}
       />
 
-      <div className="bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-5">
-        {size} Yards
-      </div>
-
       <div className="w-full h-32 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg mb-5 flex items-center justify-center relative overflow-hidden">
+        <div className="absolute top-3 left-3 bg-blue-500 text-white text-sm font-semibold px-3 py-1 rounded-full z-10">
+          {size} Yards
+        </div>
         {image ? (
           <img
             src={image}
