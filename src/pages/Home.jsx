@@ -37,7 +37,7 @@ const Home = () => {
         </div>
 
         {selectedSkip && (
-          <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white text-lg font-semibold px-8 py-4 rounded-full inline-block shadow-lg">
+          <div className="btn-primary">
             {selectedSkip.size} Yard Skip - £
             {selectedSkip.price_before_vat + selectedSkip.vat} (
             {selectedSkip.hire_period_days} day hire)
@@ -45,7 +45,7 @@ const Home = () => {
         )}
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {skipData.map((skip) => (
           <SkipCard
             key={skip.id}

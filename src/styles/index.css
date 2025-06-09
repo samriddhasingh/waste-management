@@ -81,5 +81,5 @@ button:focus-visible {
 }
 
 .btn-primary {
-  @apply px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700;
+  @apply bg-gradient-to-r from-blue-500 to-blue-600 text-white max-sm:text-base text-lg font-semibold max-sm:p-3 px-8 py-4 rounded-full inline-block shadow-lg;
 }

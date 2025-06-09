@@ -13,7 +13,7 @@ const SkipCard = ({
     <div
       onClick={onSelect}
       className={`
-        bg-gray-50 rounded-2xl p-6 border-2 cursor-pointer relative 
+        border border-gray-200 sbg-gray-50 rounded-2xl p-4 sm:p-6 cursor-pointer relative 
         transition-all duration-300 ease-in-out hover:-translate-y-1 
         hover:shadow-xl overflow-hidden group
         ${
