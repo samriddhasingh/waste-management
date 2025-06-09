@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SkipCard from "../components/SkipCard";
 import { fetchSkipData } from "../services/api/skipData";
-import "../styles/Home.css";
+import "../styles/home.css";
 
 const Home = () => {
   const [skipData, setSkipData] = useState([]);
